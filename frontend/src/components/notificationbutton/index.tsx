@@ -1,6 +1,6 @@
-import icon from '../../assets/img/notfincon.svg'
+import icon from '../../assets/img/notfincon.svg';
 
-import './style.css'
+import './style.css';
 
 function NotificationButton() {
 
@@ -11,4 +11,4 @@ function NotificationButton() {
     )
 }
 
-export default NotificationButton
+export default NotificationButton;
