@@ -37,11 +37,8 @@ public class SmsService {
 				+ " com um total de R$ " + String.format("%.0f", sale.getAmount());
  
 		Twilio.init(twilioSid, twilioKey);
-
 		PhoneNumber to = new PhoneNumber(twilioPhoneTo);
 		PhoneNumber from = new PhoneNumber(twilioPhoneFrom);
-		
-
 		Message message = Message.creator(to, from, msg).create();
 
 		System.out.println(message.getSid());
